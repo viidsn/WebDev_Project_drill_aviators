@@ -1,3 +1,74 @@
+/* Убираем стандартные отступы браузера и задаём общий шрифт */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* Главная секция с фоном */
+.hero {
+  position: relative; /* нужно для overlay (затемнения) */
+  background-image: url('/Users/petrushka/Desktop/Web_Lab/WebDev_Project_drill_aviators/img/hero.jpg'); /* путь к твоей картинке */
+  background-size: cover;   /* картинка растягивается, чтобы заполнить весь экран */
+  background-position: center; /* центрируем картинку */
+  height: 100vh; /* секция на всю высоту экрана */
+  display: flex; /* используем flexbox для центрирования */
+  justify-content: center; /* по центру по горизонтали */
+  align-items: center;     /* по центру по вертикали */
+  text-align: center;      /* выравниваем текст по центру */
+  color: white;            /* цвет текста */
+  padding: 20px;
+}
+
+/* Полупрозрачный тёмный слой поверх картинки */
+.overlay {
+  position: absolute;  /* фиксируем поверх hero */
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); 
+  /* rgba = red, green, blue, alpha (прозрачность: 0–1) */
+  z-index: 1; /* слой выше фона */
+}
+
+/* Контент (заголовок, текст, кнопка) */
+.content {
+  position: relative; /* чтобы быть выше overlay */
+  z-index: 2; 
+  max-width: 700px;
+}
+
+/* Заголовок */
+.hero h1 {
+  font-size: 3em; /* размер шрифта */
+  margin: 0;      /* убираем стандартные отступы */
+}
+
+/* Текст */
+.hero p {
+  font-size: 1.2em;
+  margin-top: 20px;
+  line-height: 1.5; /* расстояние между строками */
+}
+
+/* Кнопка */
+.hero button {
+  margin-top: 20px;
+  padding: 12px 24px;   /* внутренние отступы */
+  font-size: 1em;
+  background-color: #28a745; /* зелёный фон */
+  color: white;             /* белый текст */
+  border: none;             /* убираем рамку */
+  border-radius: 6px;       /* закруглённые края */
+  cursor: pointer;          /* курсор-рука при наведении */
+  transition: background-color 0.3s ease; 
+  /* плавная анимация при изменении цвета */
+}
+
+/* Изменение цвета при наведении */
+.hero button:hover {
+  background-color: #218838; 
+}
+
+
 .gallery {
     display: flex;           /* включаем flex-контейнер */
     justify-content: center; /* центрируем по горизонтали */
@@ -12,10 +83,4 @@
     height: auto;    
     border-radius: 10px; /* чтобы фото выглядели аккуратнее */
     box-shadow: 0 4px 10px rgba(0,0,0,0.2); /* красивая тень */
-}
-
-h1 {
-    color: #76B1FF;
-    font-family: Arial, sans-serif;
-    text-align: center;
 }
