@@ -1,0 +1,21 @@
+.gallery {
+    display: flex;           /* включаем flex-контейнер */
+    justify-content: center; /* центрируем по горизонтали */
+    align-items: center;     /* центрируем по вертикали (если есть высота контейнера) */
+    flex-wrap: wrap;         /* перенос, если картинок много */
+    gap: 30px;               /* промежуток между фото */
+    margin: 20px auto;       /* отступы сверху/снизу и автоцентрирование блока */
+}
+
+.gallery img {
+    width: 450px;    
+    height: auto;    
+    border-radius: 10px; /* чтобы фото выглядели аккуратнее */
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2); /* красивая тень */
+}
+
+h1 {
+    color: #76B1FF;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
