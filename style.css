@@ -1,0 +1,80 @@
+
+/* Header and navigation styles */
+header {
+    height: 64px;
+    background: #f5f5f5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.03);
+    border-radius: 18px;
+    margin: 0 0 32px 0;
+    width: 100%;
+    transition: box-shadow 0.2s;
+}
+
+header nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    gap: 32px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    height: 100%;
+}
+
+header nav ul li {
+    height: 100%;
+    display: flex;
+    align-items: stretch;
+}
+
+header nav ul li a {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    font-size: 1.3em;
+    text-decoration: none;
+    color: #333;
+    padding: 0 32px;
+    border-radius: 12px;
+    transition: background 0.18s, color 0.18s, box-shadow 0.18s;
+    box-sizing: border-box;
+    background: transparent;
+}
+
+header nav ul li a:hover {
+    background: #e0e0e0;
+    color: #222;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+}
+
+/* Footer style for consistency */
+.site-footer {
+    margin-top: 40px;
+    text-align: center;
+    color: #888;
+    font-size: 0.9em;
+}
+.gallery {
+    display: flex;           /* включаем flex-контейнер */
+    justify-content: center; /* центрируем по горизонтали */
+    align-items: center;     /* центрируем по вертикали (если есть высота контейнера) */
+    flex-wrap: wrap;         /* перенос, если картинок много */
+    gap: 30px;               /* промежуток между фото */
+    margin: 20px auto;       /* отступы сверху/снизу и автоцентрирование блока */
+}
+
+.gallery img {
+    width: 450px;    
+    height: auto;    
+    border-radius: 10px; /* чтобы фото выглядели аккуратнее */
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2); /* красивая тень */
+}
+
+h1 {
+    color: #76B1FF;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
