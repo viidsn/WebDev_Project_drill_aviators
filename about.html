@@ -3,31 +3,66 @@
 <head>
   <meta charset="UTF-8">
   <title>About me</title>
-  <link rel="stylesheet" href="css/style.css">
+  <style>
+    .gallery img {
+      width: 500px;       
+      height: auto;      
+      margin-right: 10px;
+      border-radius: 12px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+    body {
+      text-align: center;
+    }
+    h1 {
+      text-align: center;
+      color:#2d9cdb;
+      margin-bottom: 18px;
+       font-size: 2rem;
+        font-weight: 400;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    }
+    button {
+      font-size: 1.2rem;
+      padding: 18px 40px;
+      border: none;
+      border-radius: 8px;
+      background: #2d9cdb;
+      color: #fff;
+      cursor: pointer;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+      transition: background 0.2s;
+    }
+  </style>
 </head>
 <body>
-  <header>
-    <nav>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
+  <h1>Lucas Travel</h1>
 
-  <h1>My story</h1>
-  <p>Some text....</p>
-  <div class="gallery">
-    <img src="img/img1.jpg" alt="Photo 1">
-  </div>
-  <p>Some text....</p>
-  <div class="gallery">
-    <img src="img/img1.jpg" alt="Photo 1">
+<nav style="margin: 30px 0; display: flex; justify-content: center; gap: 40px;">
+    <a href="home.html" style="text-decoration:none;">
+      <button onmouseover="this.style.background='#217dbb'" onmouseout="this.style.background='#2d9cdb'">Home</button>
+    </a>
+    <a href="about.html" style="text-decoration:none;">
+      <button onmouseover="this.style.background='#217dbb'" onmouseout="this.style.background='#2d9cdb'">About</button>
+    </a>
+    <a href="contact.html" style="text-decoration:none;">
+      <button onmouseover="this.style.background='#217dbb'" onmouseout="this.style.background='#2d9cdb'">Contact</button>
+    </a>
+</nav>
+
+<div style="max-width: 700px; margin: 0 auto 30px; border-radius: 12px; padding: 32px 28px;">
+    <h2 style="color: #2d9cdb; margin-bottom: 18px; font-size: 2rem; font-weight: 600;">About Me</h2>
+    <p style="font-size: 1.15rem; color: #333; line-height: 1.7; margin-bottom: 0;">
+        My name is Lucas, and my passion for adventure was ignited on snowy slopes, where I first experienced the exhilaration of snowboarding. Over the years, I have explored breathtaking mountains, connected with remarkable individuals, and embraced the art of discovering new destinations. Inspired by these journeys, I established my own travel agency to share my enthusiasm for exploration. Through this website, I aim to help others create memorable experiences—whether pursuing pristine powder or uncovering hidden gems around the globe.
+    </p>
+</div>
+
+  <div class="gallery" style="max-width: 700px; margin: 0 auto 30px; border-radius: 12px; padding: 32px 28px;">
+    <img src="lucas.png" alt="Photo of Lucas in the mountains">
+  <p style="font-size: 1.15rem; color: #333; line-height: 1.7; margin-bottom: 0;">
+    Join me as I share stories, tips, and inspiration from my adventures around the world. Whether you're seeking thrilling mountain escapes, hidden local gems, or unforgettable cultural experiences, my mission is to help you discover the joy of travel and create memories that last a lifetime. Let’s explore together!
+  </p>
   </div>
 
-  <footer class="site-footer">
-    &copy; 2025 Lucas Snow. All rights reserved.
-  </footer>
 </body>
 </html>
