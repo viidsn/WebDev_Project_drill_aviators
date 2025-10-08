@@ -6,14 +6,8 @@
       box-shadow: 0 2px 8px rgba(0,0,0,0.1);
     }
     body {
-      background-image: url('background.png');
-      background-size: cover;
-      background-position: center;
-      position: relative;
-      z-index: 1;
       text-align: center;
-      backdrop-filter: blur(8px);
-      -webkit-backdrop-filter: blur(8px);
+      background-color: rgb(188, 215, 239);
     }
     h1 {
       text-align: center;
@@ -38,7 +32,7 @@
       padding: 18px 40px;
       border: none;
       border-radius: 8px;
-      background: #2d9cdb;
+      background: #839faf;
       color: #fff;
       cursor: pointer;
       box-shadow: 0 2px 8px rgba(0,0,0,0.08);
