@@ -1,54 +1,60 @@
- .gallery img {
-      width: 500px;       
-      height: 300px;      
-      margin-right: 10px;
-      border-radius: 12px;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-    }
-    body {
-      text-align: center;
-      background: linear-gradient(to bottom, #F0F8FF, #DCEFFE, #A8CFE0, #6C8EBF);
-    }
-    h1, h2 {
-      text-align: center;
-      color:#2d9cdb;
-      margin-bottom: 18px;
-       font-size: 2rem;
-        font-weight: 400;
-        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    }
-    button {
-      font-size: 1.2rem;
-      padding: 18px 40px;
-      border: none;
-      border-radius: 8px;
-      background: #839faf;
-      color: #fff;
-      cursor: pointer;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.08);
-      transition: background 0.2s;
-    }
-    p{font-size: 1.15rem;
-   color: #333;
-    line-height: 1.7;
-     margin-bottom: 0;
-    }
-    html, body {
-  height: 100%;
-  margin: 0;
-  display: flex;
-  flex-direction: column;
+.gallery img {
+    width: 500px;       
+    height: 300px;      
+    margin-right: 10px;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
 }
 
+html {
+    height: 100%;
+}
+
+body {
+    min-height: 100vh;
+    margin: 0;
+    background: linear-gradient(to bottom, #F0F8FF, #DCEFFE, #A8CFE0, #6C8EBF);
+    background-attachment: fixed;  /* attach background to the screen */
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+h1, h2 {
+    text-align: center;
+    color: #2d9cdb;
+    margin-bottom: 18px;
+    font-size: 2rem;
+    font-weight: 400;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+button {
+    font-size: 1.2rem;
+    padding: 18px 40px;
+    border: none;
+    border-radius: 8px;
+    background: #839faf;
+    color: #fff;
+    cursor: pointer;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    transition: background 0.2s;
+}
+
+p {
+    font-size: 1.15rem;
+    color: #333;
+    line-height: 1.7;
+    margin-bottom: 0;
+}
 
 main {
-  flex: 1;           /* основной контент занимает всё доступное место */
+    flex: 1; /* основной контент занимает всё доступное место */
 }
 
 footer {
-  background-color: #6C8EBF;
-  color: white;
-  padding: 16px 0;
+    background-color: #6C8EBF;
+    color: white;
+    padding: 16px 0;
 }
-
-
