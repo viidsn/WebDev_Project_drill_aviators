@@ -2,5 +2,5 @@
 
 ### Group Name:
 - Anton Dovbysh
-- write your names...
+- Rostyslav Khludov
 - ...
