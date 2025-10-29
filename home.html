@@ -6,23 +6,26 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-<h1>Lucas Travel</h1>
-  <header>
-    <nav style="margin: 30px 0; display: flex; justify-content: center; gap: 40px;">
-   <a href="home.html" style="text-decoration:none;">
-      <button onmouseover="this.style.background='#217dbb'" onmouseout="this.style.background='#839faf'">Home</button>
-    </a>
-    <a href="about.html" style="text-decoration:none;">
-      <button onmouseover="this.style.background='#217dbb'" onmouseout="this.style.background='#839faf'">About</button>
-    </a>
-    <a href="contact.html" style="text-decoration:none;">
-      <button onmouseover="this.style.background='#217dbb'" onmouseout="this.style.background='#839faf'">Contact</button>
-    </a>
+  <header class="main-header">
+    <nav class="nav-menu">
+      <div class="logo">Lucas Travel</div>
+      <div class="nav-links">
+        <a href="home.html" class="nav-link">Home</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </div>
     </nav>
   </header>
 
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Explore the World with Lucas Travel</h1>
+      <p>Your adventure starts here. Discover breathtaking destinations and unforgettable experiences.</p>
+      <a href="about.html" class="button">Learn More</a>
+    </div>
+  </section>
+
   <h2>Welcome to my Blog and Travel Website!</h2>
-  <p>Feel free to book a trip with me to see views like these!</p>
 
   <div class="gallery">
     <img src="img/mountains.png" alt="Photo 1">
@@ -30,13 +33,15 @@
     <img src="img/mountains3.png" alt="Photo 3">
   </div>
 
-  <div style="max-width: 700px; margin: 0 auto 30px; border-radius: 12px; padding: 32px 28px;">
+  <div class="content-section">
     <p>Traveling always opens up new horizons and experiences. I love exploring new cities, walking through quiet streets, and photographing unusual places. Every adventure leaves its own memories and inspires new ideas.</p>
     <p>Mountains have always held a special place in my heart. There's nothing like the crisp air, breathtaking views, and the thrill of snowboarding down fresh powder. Snowboarding lets me connect with nature and feel truly alive, making every trip to the mountains unforgettable.</p>
   </div>
 
-  <footer>
-    &copy; 2025 Lucas Travel. All rights reserved.
+  <footer class="site-footer">
+    <p>&copy; 2025 Lucas Travel. All rights reserved.</p>
   </footer>
+  
+  <script src="js/main.js" defer></script>
 </body>
 </html>
