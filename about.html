@@ -6,40 +6,43 @@
    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <main>
-  <h1>Lucas Travel</h1>
+  <header class="main-header">
+    <nav class="nav-menu">
+      <div class="logo">Lucas Travel</div>
+      <div class="nav-links">
+        <a href="home.html" class="nav-link">Home</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </div>
+    </nav>
+  </header>
 
-<nav style="margin: 30px 0; display: flex; justify-content: center; gap: 40px;">
-    <a href="home.html" style="text-decoration:none;">
-      <button onmouseover="this.style.background='#217dbb'" onmouseout="this.style.background='#839faf'">Home</button>
-    </a>
-    <a href="about.html" style="text-decoration:none;">
-      <button onmouseover="this.style.background='#217dbb'" onmouseout="this.style.background='#839faf'">About</button>
-    </a>
-    <a href="contact.html" style="text-decoration:none;">
-      <button onmouseover="this.style.background='#217dbb'" onmouseout="this.style.background='#839faf'">Contact</button>
-    </a>
-</nav>
+  <section class="hero hero-about">
+    <div class="hero-content">
+      <h1>About Me</h1>
+    </div>
+  </section>
 
-<div style="max-width: 700px; margin: 0 auto 30px; border-radius: 12px; padding: 32px 28px;">
-    <h2>About Me</h2>
+  <div class="content-section">
     <p>
-        My name is Lucas, and my passion for adventure was ignited on snowy slopes, where I first experienced the exhilaration of snowboarding. Over the years, I have explored breathtaking mountains, connected with remarkable individuals, and embraced the art of discovering new destinations. Inspired by these journeys, I established my own travel agency to share my enthusiasm for exploration. Through this website, I aim to help others create memorable experiences—whether pursuing pristine powder or uncovering hidden gems around the globe.
+      My name is Lucas, and my passion for adventure was ignited on snowy slopes, where I first experienced the exhilaration of snowboarding. Over the years, I have explored breathtaking mountains, connected with remarkable individuals, and embraced the art of discovering new destinations. Inspired by these journeys, I established my own travel agency to share my enthusiasm for exploration. Through this website, I aim to help others create memorable experiences—whether pursuing pristine powder or uncovering hidden gems around the globe.
     </p>
-</div>
-
-  <div class="gallery" style="max-width: 700px; margin: 0 auto 30px; border-radius: 12px;">
-    <img src="img/lucas.png" alt="Photo of Lucas in the mountains">
-  <p>
-    Along the way, I’ll share practical guides, honest reflections, and personal moments that shaped my journey. From bustling city streets to quiet coastal sunsets, every destination has a story to tell. Travel isn’t just about places — it’s about the people you meet, the lessons you learn, and the sense of wonder that stays with you long after you return home. So pack your curiosity, and let the adventure begin!
-  </p>
   </div>
 
-</main>
+  <div class="gallery Lucas">
+    <img src="img/lucas.png" alt="Photo of Lucas in the mountains">
+  </div>
 
-   <footer class="site-footer">
+  <div class="content-section">
+    <p>
+      Along the way, I’ll share practical guides, honest reflections, and personal moments that shaped my journey. From bustling city streets to quiet coastal sunsets, every destination has a story to tell. Travel isn’t just about places — it’s about the people you meet, the lessons you learn, and the sense of wonder that stays with you long after you return home. So pack your curiosity, and let the adventure begin!
+    </p>
+  </div>
+
+  <footer class="site-footer">
     &copy; 2025 Lucas Snow. All rights reserved.
   </footer>
-
+  
+  <script src="js/main.js" defer></script>
 </body>
 </html>
