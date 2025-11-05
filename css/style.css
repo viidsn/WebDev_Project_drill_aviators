@@ -5,7 +5,7 @@
     top: 0;
     left: 0;
     right: 0;
-    z-index: 1000;
+    z-index: 1000; /* Ensure header is above other content */
     padding: 20px 0;
     transition: all 0.4s;
 }
@@ -23,7 +23,7 @@
 .nav-menu {
     width: 90%;
     max-width: 1200px;
-    margin: 0 auto;
+    margin: 0 auto; /* Center the nav menu */
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -67,7 +67,7 @@
     justify-content: center;
     text-align: center;
     color: white;
-    position: relative;
+    position: relative; /* Inside elements can be positioned relative to this */
 }
 
 .hero-about {
@@ -172,7 +172,7 @@
 .gallery img {
     width: 375px;
     height: 250px;
-    object-fit: cover;
+    object-fit: cover; /* Ensure images cover the area */
     border-radius: 10px;
     transition: all 0.3s;
 }
