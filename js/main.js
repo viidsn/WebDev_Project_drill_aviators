@@ -1,4 +1,3 @@
-// Change header style on scroll
 (function() {
   const header = document.querySelector('.main-header');
   if (!header) return;
@@ -11,12 +10,10 @@
     }
   }
 
-  // Инициализация (выполнить один раз на загрузке)
   onScroll();
   window.addEventListener('scroll', onScroll);
 })();
 
-// Form handler for trip enquiries
 document.addEventListener('DOMContentLoaded', function () {
   const form = document.getElementById('enquiry-form');
   if (!form) return;
@@ -24,7 +21,6 @@ document.addEventListener('DOMContentLoaded', function () {
 
   form.addEventListener('submit', function (e) {
     e.preventDefault();
-    // Simple client-side validation
     const name = form.querySelector('[name="name"]').value.trim();
     const email = form.querySelector('[name="email"]').value.trim();
     const destination = form.querySelector('[name="destination"]').value.trim();
@@ -35,7 +31,6 @@ document.addEventListener('DOMContentLoaded', function () {
       return;
     }
 
-    // Simulate sending
     status.textContent = 'Sending your enquiry...';
     status.style.color = '#333';
 
