@@ -41,3 +41,16 @@ document.addEventListener('DOMContentLoaded', function () {
     }, 800);
   });
 });
+
+// Mobile nav toggle
+document.addEventListener('DOMContentLoaded', function () {
+  const toggle = document.querySelector('.menu-toggle');
+  const links = document.querySelector('.nav-links');
+  if (!toggle || !links) return;
+
+  toggle.addEventListener('click', function () {
+    const expanded = this.getAttribute('aria-expanded') === 'true';
+    this.setAttribute('aria-expanded', String(!expanded));
+    links.classList.toggle('show');
+  });
+});
