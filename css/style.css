@@ -53,41 +53,60 @@
     background-color: rgba(255, 255, 255, 0.2);
 }
 
+/* === Hero с видео === */
 .hero {
+    position: relative;
     height: 100vh;
-    background: url('../img/hero-mountains.jpg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
     display: flex;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.1));
     align-items: center;
     justify-content: center;
     text-align: center;
     color: white;
-    position: relative; /* Inside elements can be positioned relative to this */
+    overflow: hidden;
 }
 
+.hero-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1; /* видео под контентом */
+}
+
+.hero-content {
+    position: relative;
+    max-width: 700px;
+    padding: 0 20px;
+    z-index: 1;
+}
+
+/* === Остальные секции остаются с фоновыми изображениями === */
 .hero-about {
     height: 50vh;
-    background: url('../img/about_hero.jpg');
+    background: url('../data/img/about_hero.jpg');
     background-size: cover;
     background-position: center;
 }
+
 .hero-contact {
     height: 50vh;
-    background: url('../img/contact_hero.jpg');
+    background: url('../data/img/contact_hero.jpg');
     background-size: cover;
     background-position: center;
 }
+
 .hero-trips {
     height: 50vh;
     background: 
         linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.1)),
-        url('../img/trips-hero.jpg');
+        url('../data/img/trips-hero.jpg');
     background-size: cover;
     background-position: center;
 }
+
 
 .hero-content {
     position: relative;
@@ -378,18 +397,113 @@ h2 {
   min-width: 0; /* Important for correct text wrapping inside flex */
 }
 
+/* === Мобильные устройства (ширина до 600px) === */
 @media (max-width: 600px) {
-    .form-grid {
-        grid-template-columns: 1fr;
+    .nav-links {
+        flex-direction: column;
+        gap: 10px;
+        margin-top: 10px;
     }
-    .enquiry-form h2 {
-        font-size: 20px;
+
+    .hero-content {
+        max-width: 90%;
+        padding: 0 10px;
     }
+
+    .gallery {
+        flex-direction: column;
+        gap: 15px;
+        padding: 20px;
+    }
+
+    .gallery img {
+        width: 100%;
+        height: auto;
+    }
+
+    .two-col {
+        flex-direction: column;
+        gap: 16px;
+    }
+
     .enquiry-form {
         padding: 16px;
         box-shadow: none;
     }
+
+    h1 {
+        font-size: 28px;
+    }
+
+    h2 {
+        font-size: 22px;
+    }
 }
+
+/* === Планшеты (ширина от 601px до 1024px) === */
+@media (min-width: 601px) and (max-width: 1024px) {
+    .nav-links {
+        gap: 15px;
+    }
+
+    .hero-content {
+        max-width: 80%;
+        padding: 0 15px;
+    }
+
+    .gallery {
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    .two-col {
+        flex-direction: row;
+        gap: 20px;
+    }
+
+    .gallery-left,
+    .gallery-right {
+        flex: 0 0 48%;
+    }
+
+    h1 {
+        font-size: 32px;
+    }
+
+    h2 {
+        font-size: 24px;
+    }
+}
+
+/* === Десктопы (ширина от 1025px) === */
+@media (min-width: 1025px) {
+    .nav-links {
+        gap: 20px;
+    }
+
+    .hero-content {
+        max-width: 700px;
+    }
+
+    .two-col {
+        flex-direction: row;
+        gap: 24px;
+    }
+
+    .gallery-left,
+    .gallery-right {
+        flex: 0 0 45%;
+    }
+
+    h1 {
+        font-size: 36px;
+    }
+
+    h2 {
+        font-size: 28px;
+    }
+}
+
 
 .site-footer {
     padding: 30px;
